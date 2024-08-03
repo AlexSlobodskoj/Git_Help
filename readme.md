@@ -36,9 +36,8 @@ SSH использует пару ключей для обеспечения б�
 graph LR;
   untracked -- "git add" --> staged;
   staged    -- "git commit"     --> tracked/comitted;
-
-
   tracked/comitted -- "changed" --> modified;
+  modified -- "git add" --> staged;
 ``` 
 
 ## Навигация
