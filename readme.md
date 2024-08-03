@@ -35,10 +35,8 @@ SSH использует пару ключей для обеспечения б�
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
-
-%% стрелка без текста для примера: 
-  A --> B;
+  staged    -- "git commit"     --> tracked/comitted;
+  tracked/comitted -- "changed" --> modified;
 ``` 
 
 ## Навигация
